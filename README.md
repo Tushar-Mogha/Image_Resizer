@@ -13,7 +13,7 @@ This project is a Python-based tool to resize images individually or in bulk usi
 
 1. Clone the repository:
    
-   git clone https://github.com/your-username/image-resizer.git
+   git clone https://github.com/Tushar-Mogha/Image-Resizer.git
    cd image-resizer
 
 
