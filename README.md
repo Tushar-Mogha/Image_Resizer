@@ -1,46 +1,100 @@
-# Image Resizer Using Python (Pillow)
+# Image Resizer
 
-This project is a Python-based tool to resize images individually or in bulk using the **Pillow** library. It also organizes input and output images with the `os` module.
+This is a Python-based graphical application for resizing images. The application features a user-friendly interface that allows users to select an image, preview it, specify dimensions, and save the resized image to a selected output directory.
+
+---
 
 ## Features
 
-- Resize individual images with specified dimensions.
-- Batch resize all images in a directory.
-- Handles popular image formats like PNG, JPEG, BMP, and GIF.
-- Automatically creates an output directory if it doesn’t exist.
+1. **Image Selection**:
+   - Browse and select an image file (`.png`, `.jpg`, `.jpeg`, `.bmp`, `.gif`).
+   - Preview the selected image in the application.
 
-## Installation
+2. **Resizable Dimensions**:
+   - Specify custom width and height for the resized image.
 
-1. Clone the repository:
-   
-   git clone https://github.com/Tushar-Mogha/Image_Resizer.git
-   cd image-resizer
+3. **Output Directory**:
+   - Choose the destination folder for saving resized images.
 
+4. **Real-time Image Preview**:
+   - Displays a preview of the selected image in a fixed-sized preview area.
 
-2. Install the required library:
+5. **User-friendly Design**:
+   - Clean and modern GUI with intuitive controls.
 
-   pip install pillow
-
-3. Set up the directory structure:
-
-Place images to resize in the input_images folder.
-The resized images will be saved in the output_images folder.
-
-## Example
-
-   Input Directory : input_images/
-
-   ![Screenshot 2024-11-21 162047](https://github.com/user-attachments/assets/1159185c-7210-45b6-be35-88f53525c91f)
-
-   Resized Output (200x200): output_images/
-
-   ![Screenshot 2024-11-21 162254](https://github.com/user-attachments/assets/ae778c8f-6f45-4911-81f6-20e864b3b238)
+---
 
 ## Technologies Used
 
--  Python: Core programming language.
--  Pillow: For image processing.
--  OS: For handling file paths and directories.
+- **Programming Language**: Python
+- **GUI Framework**: Tkinter
+- **Image Processing**: PIL (Python Imaging Library) via the `Pillow` module
+
+---
+
+## Prerequisites
+
+Ensure you have the following installed on your system:
+
+1. **Python 3.6 or above**
+2. **Required Python libraries**:
+   - `Pillow`
+   - `tkinter` (usually included with Python installations)
+
+Install the required library using pip:
+
+- pip install pillow
+
+## How to Use
+
+1. **Run the Script**:
+   - Save the script as `image_resizer.py` and execute it:
+     ```bash
+     python image_resizer.py
+     ```
+
+2. **Select an Image**:
+   - Click the **Browse** button next to "Select Image" to choose an image file from your system.
+   - The selected image will be displayed in the preview area.
+
+3. **Specify Output Directory**:
+   - Click the **Browse** button next to "Output Directory" to select the folder where the resized image will be saved.
+
+4. **Enter Dimensions**:
+   - Specify the desired width and height for the resized image in the corresponding fields.
+
+5. **Resize the Image**:
+   - Click the **Resize Image** button to resize the selected image and save it to the specified output directory.
+
+6. **Success Notification**:
+   - A success message will appear upon successful resizing and saving of the image.
+
+---
+
+## File Structure
+
+---
+
+## Preview
+
+### GUI Layout
+
+
+![Screenshot 2024-11-22 170323](https://github.com/user-attachments/assets/714ba867-e1ca-44b2-83de-430d781024c9)
 
 
 
+![Screenshot 2024-11-22 170358](https://github.com/user-attachments/assets/91b68802-6562-4b4f-879a-7785a090c3ee)
+
+
+
+
+---
+
+## Error Handling
+
+- The application prevents non-image files from being selected.
+- Ensures that the width and height inputs are valid integers.
+- Displays detailed error messages for invalid inputs or unexpected issues during execution.
+
+---
